@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Online Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header id="top">
-        <h1>My Online Store</h1>
-        <nav>
+<body id="body-div">
+    <header id="top" class="clearfix">
+        <div icon-div>
+             <h1 id="logo-div">My Online Store</h1>
+        </div>
+        <nav id="nav-div">
             <ul>
                 <li><a href="#index.html">Home</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#product">Products</a></li>
                 <li><a href="#promo">Promos</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -22,58 +25,57 @@
     <main>
         <article>
             <section id="about">
-                <h2>RzT's Footwear</h2>
-                <p>Welcome to RzT's Footwear, a premier footwear destination dedicated to providing a diverse and stylish range of shoes for every occasion. Established in 2021, RzT's Footwear has quickly become a go-to choice for fashion-forward individuals seeking quality and trendsetting footwear.</p>
-
-                <p>We collaborate with renowned and emerging brands, carefully selecting products that embody quality craftsmanship and contemporary design. RzT's Footwear is committed to offering a blend of established labels and exciting new names, providing customers with an eclectic array of options.</p>
+                <h2 id="names">RzT's Footwear</h2>
+                <p class="par">Welcome to RzT's Footwear, a premier footwear destination dedicated to providing a diverse and stylish range of shoes for every occasion. Established in 2021, RzT's Footwear <br>has quickly become a go-to choice for fashion-forward individuals seeking quality and trendsetting footwear.</p>
+                <br>
+                <p class="par">We collaborate with renowned and emerging brands, carefully selecting products that embody quality craftsmanship and contemporary design. RzT's Footwear is committed to offering a blend of established labels and exciting new names, providing customers with an eclectic array of options.</p>
                 
                 <figure>
                     <img src="images/logo.png" alt="">
-                    <figcaption style="font-weight: bold;" >Our Official Store Logo</figcaption>
+                    <figcaption style="font-weight: bold; margin-left: 1%;" >Our Official Store Logo</figcaption>
 
-                    <p>Our logo represents a business with a personalized or individualized approach, the logo could convey a sense of uniqueness and customization. Consider incorporating stylized initials or a bespoke icon that reflects a tailored and personalized experience.</p>
+                    <p class="par">Our logo represents a business with a personalized or individualized approach, the logo could convey a sense of uniqueness and customization. Consider incorporating stylized initials or a bespoke icon that reflects a tailored and personalized experience.</p>
                 </figure>
-
             </section>
         </article>
         <hr>
         <article>
-            <section id="product">
+            <section id="product" class="products">
                 <h2>Mens Wear</h2>
                 <figure>
                     <img style="width: 150px"; src="images/nike.png" alt="">
                     <figcaption style="font-weight: bold";> Product 1: Nike TR 13</figcaption>
-                    <p>When time is of the essence, but your workout can't wait any longer, ride with the Nike In-Season TR 13. It offers versatility, the kind that can carry you from a hard-hitting HIIT class to the treadmill and turn a squeezed-in gym session into sweat-soaked satisfaction. Whether you're moving laterally or deepening your cardio base by reeling in a few miles in front of you, the energy return helps you reap what you sow.</p>
+                    <p class="discrip">When time is of the essence, but your workout can't wait any longer, ride with the Nike In-Season TR 13. It offers versatility, the kind that can carry you from a hard-hitting HIIT class to the treadmill and turn a squeezed-in gym session into sweat-soaked satisfaction. Whether you're moving laterally or deepening your cardio base by reeling in a few miles in front of you, the energy return helps you reap what you sow.</p>
                 </figure>
                 <br>
                 <figure>
                     <img style="width: 150px"; src="images/black.jpg" alt="">
                     <figcaption style="font-weight: bold;">Product 2: Leather Shoes</figcaption>
-                    <p>This shoes for men are 100% leather combined with the breathable microfiber lining and thicken cushioned insole,can keep your foot comfortable</p>
+                    <p class="discrip">This shoes for men are 100% leather combined with the breathable microfiber lining and thicken cushioned insole,can keep your foot comfortable</p>
                 </figure>
             </section>
                
-            <section>
+            <section class="products">
                 <h2>Ladies Wear</h2>
                 <figure>
                     <img style="width: 150px"; src="images/ladies.jpg" alt="">
                     <figcaption style="font-weight: bold";>Product 1: Women Sandals</figcaption>
-                    <p>Fashion Feet Brand presents high quality footwear choice for the daily use is this pair of sandals. Get a Very comfortable feeling by wearing these multi coloured Sandals & Slippers flip-flops, for Women and Girls from Fashion Feet. You can team these Sandal with casuals of your choice to look stylish. While the Fabric upper and leather lining of these sandals promise a comfortable walk, the Comfort sole assures good slip and abrasion resistance. Footwear reflect your personality and fashion taste, a comfortable pair of footwear keeps you at ease.</p>
+                    <p class="discrip">Fashion Feet Brand presents high quality footwear choice for the daily use is this pair of sandals. Get a Very comfortable feeling by wearing these multi coloured Sandals & Slippers flip-flops, for Women and Girls from Fashion Feet. You can team these Sandal with casuals of your choice to look stylish. While the Fabric upper and leather lining of these sandals promise a comfortable walk, the Comfort sole assures good slip and abrasion resistance. Footwear reflect your personality and fashion taste, a comfortable pair of footwear keeps you at ease.</p>
                 </figure>
                 <br>
                 <figure>
                     <img style="width: 150px"; src="images/heels.jpg" alt="">
                     <figcaption style="font-weight: bold";>Product 2: Thin Heel ladies footwear</figcaption>
-                    <p>These stylish heels make you look more classy and beautiful, the heels are designed to make your legs look thinner.</p>
+                    <p class="discrip">These stylish heels make you look more classy and beautiful, the heels are designed to make your legs look thinner.</p>
                 </figure>
             </section>
 
-            <section>
+            <section class="products">
                 <h2>Kids Wear</h2>
                 <figure>
                     <img style="width: 150px"; src="images/boots.webp" alt="">
                     <figcaption style="font-weight: bold";>Product 1: Casual Shoes Kids</figcaption>
-                     <p>This Shoes are designed with soft strap to help your baby's feet to fit comfortably. Their Soft Nature. And Comfy, Just Right To Protect The Tiny Little Feet. These Shoes Help In Keeping The Soft Muscles, Tendons And Bones Of Babies Feet Safe And Warm. Soft And Comfortable Inner Cotton Cloth Easy On Your Baby's Soft Skin ,Thick Sponge For Better Comfort.</p>
+                     <p class="discrip">This Shoes are designed with soft strap to help your baby's feet to fit comfortably. Their Soft Nature. And Comfy, Just Right To Protect The Tiny Little Feet. These Shoes Help In Keeping The Soft Muscles, Tendons And Bones Of Babies Feet Safe And Warm. Soft And Comfortable Inner Cotton Cloth Easy On Your Baby's Soft Skin ,Thick Sponge For Better Comfort.</p>
                 </figure>
             </section>
 
@@ -81,7 +83,7 @@
         <hr>
         <article>
             <section id="promo">
-                <h2>Promos</h2>
+                <h2 id="promos1">Promos</h2>
                 <section>
                     <p>RzT's Footwear limited offer</p>
                     <ul>
