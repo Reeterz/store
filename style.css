@@ -1,73 +1,149 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-#top{
-    width: 100%;
-    float: left;
-    margin-left: 2%;
-    margin-top: 2%;
+body{
+    height: 100%;
 }
-#icon-div{
-    float: left;
-    width: 200px;
-    height: 70px;
-}
-#logo-div{
-    float: left;
-    font-weight: bold;
-    font-size: 30px;
-    color: blue;
+#menu-button{
+    color: #250369;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
 }
 #nav-div{
-    float: left;
-    width: 400px;
-    height: 70px;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: aqua;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
-#nav-div ul{
+#icon-div h1{
+    color: #250369;
+    border-bottom: 4px solid orange;
+
+}
+#menu{
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#nav-div ul li{
+#menu li{
     list-style: none;
     margin-left: 65px;
     margin-top: 10px;
     font-size: 16px;
 }
-#nav-div ul li a{
-    display: flex;
-    
+#menu li a{
+    display: block;
+    margin-left: 20px;
+    color: #250369;
     text-decoration: none;
+    font-size: 14px;
     font-weight: bold;
-    color: black;
-    transition: 0.5s ease-in-out;
-}
-#nav-div ul li a:hover{
-    color: orange;
 }
 
-#names{
-    margin-top: 5px;
-    margin-left: 1%;
-    margin-bottom: 5px;
+#menu li a i{
+    color: black;
 }
-.par{
-    font-style: italic;
+#menu li .active{
+    border-bottom: 4px solid orange;
+}
+#menu li a:hover{
+    border-bottom: 4px solid orange;
+}
+
+#about{
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#content{
+    background-image: url(images/12.jpg);
+    background-color: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    color: #250369;
+}
+#content p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+#content button{
+    margin-top: 20px;
+    padding: 15px 30px;
+    border: none;
+    background-color: rgb(155, 40, 40);
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#pheading{
+    text-align: center;
+    margin: 50px 0;
+    color: #250369;
+}
+#sec{
+    padding: 10px 5%;
+}
+.products .card{
+    width: 310px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.products .card img{
+    height: 250px;
+    width: 90%;
     padding-left: 5%;
 }
-.products{
-    margin-left: 1%;
-    margin-top: 5px;
+.products .card .title{
+    padding: 5px 20px;
+    opacity: 0.8;
 }
-.discrip{
-    color: green;
+.products .card .discrip{
+    font-weight: 900;
+    font-size: 14px;
+    color: #250369;
+    padding: 0 10px;
+}
+.products .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.products .card .box .price{
+    color: orange;
+    font-size: 18px;
     font-weight: bold;
-    margin-left: 3%;
 }
-#promo{
-    margin-left: 3%;
+.products .card .box .btn{
+    font-size: 13px;
+    color: #250369;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid orange;
+}
+.products .card .box .btn:hover{
+    cursor: pointer;
+    background-color: orange;
+    color: white;
 }
