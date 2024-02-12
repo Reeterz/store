@@ -6,13 +6,13 @@
 body{
     height: 100%;
 }
-#menu-button{
+.menu-button{
     color: #250369;
     font-size: 23px;
     cursor: pointer;
     display: none;
 }
-#nav-div{
+.nav-div{
     padding: 20px 5%;
     display: flex;
     justify-content: space-between;
@@ -23,43 +23,40 @@ body{
     background-color: aqua;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
-#icon-div h1{
+.nav-div .icon-div h1{
     color: #250369;
     border-bottom: 4px solid orange;
-
 }
-#menu{
+.menu{
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#menu li{
+.nav-div .menu li{
     list-style: none;
-    margin-left: 65px;
-    margin-top: 10px;
-    font-size: 16px;
+    display: inline-block;
 }
-#menu li a{
+.nav-div .menu li a{
     display: block;
     margin-left: 20px;
     color: #250369;
+    border-bottom: 4px solid transparent;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
 }
-
-#menu li a i{
+.nav-div .menu li .active{
+    border-bottom: 4px solid orange;
+}
+.nav-div .menu li a i{
     color: black;
 }
-#menu li .active{
-    border-bottom: 4px solid orange;
-}
-#menu li a:hover{
+.nav-div .menu li a:hover{
     border-bottom: 4px solid orange;
 }
 
-#about{
+.about{
     display: block;
     align-items: center;
     text-align: center;
@@ -67,9 +64,9 @@ body{
     margin-bottom: 10px;
 }
 
-#content{
+.content{
     background-image: url(images/12.jpg);
-    background-color: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 0 5%;
     display: flex;
@@ -79,12 +76,15 @@ body{
     height: 100vh;
     color: #250369;
 }
-#content p{
+.content h1{
+    font-size: 40px;
+}
+.content p{
     font-size: 20px;
     margin-top: 20px;
 }
-#content button{
-    margin-top: 20px;
+.content button{
+    margin-top: 30px;
     padding: 15px 30px;
     border: none;
     background-color: rgb(155, 40, 40);
@@ -92,13 +92,22 @@ body{
     cursor: pointer;
     border-radius: 5px;
 }
-#pheading{
+.pheading{
     text-align: center;
     margin: 50px 0;
     color: #250369;
 }
-#sec{
+.sec{
     padding: 10px 5%;
+}
+.names{
+    color: #250369;
+    padding-bottom: 10px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 .products .card{
     width: 310px;
@@ -146,4 +155,62 @@ body{
     cursor: pointer;
     background-color: orange;
     color: white;
+}
+#footer{
+    background-color: #f3f4f6;
+    height: 10vh;
+}
+#footer p{
+    text-align: center;
+    line-height: 10vh;
+}
+#promo{
+    background-color: #250369;
+    color: #fff;
+    min-height: 120px;
+}
+#promo h2{
+    text-align: left;
+    padding-left: 2%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+#promo ul li{
+    display: flex;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 820px){
+    .menu-button{
+        display: block;
+        z-index: 999;
+    }
+    .menu-button i.active::before{
+        content: "\f00d";
+    }
+    .nav-div .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: #f3f4f6;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .nav-div .menu.active{
+        left: 0%;
+    }
+    .nav-div .menu li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-div .menu li a{
+        margin: 10px 0;
+        font-size: 25px;
+    }
 }
